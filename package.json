@@ -1,0 +1,25 @@
+{
+  "name": "online-scheduling-system",
+  "version": "1.0.0",
+  "description": "online scheduling system for check ups",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neildc14/Online-Scheduling-System.git"
+  },
+  "author": "Neil Edward Dela Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neildc14/Online-Scheduling-System/issues"
+  },
+  "homepage": "https://github.com/neildc14/Online-Scheduling-System#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.45.0"
+  }
+}

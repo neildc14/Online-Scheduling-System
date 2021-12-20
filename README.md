@@ -1,2 +1,13 @@
 # Online-Scheduling-System
-school project
+
+//THIS IS A SCHOOL PROJECT FOR HCI118
+
+the technology used were:
+
+Bootstrap
+SASS
+PHP
+JAVASCRIPT
+CSS
+
+
