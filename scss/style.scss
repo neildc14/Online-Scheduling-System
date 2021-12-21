@@ -1,8 +1,6 @@
-*{
-    padding: 0;
-}
+@import 'base/reset';
+@import 'base/typography';
 
-h1{
-    font-size:40px;
-    color: red;
-}
+@import 'abstracts/colors';
+
+@import 'layout/navigation';
