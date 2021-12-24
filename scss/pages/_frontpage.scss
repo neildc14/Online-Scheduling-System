@@ -1,24 +1,24 @@
 main{
     @include breakPoints(800px){
         position: relative;  //making it not overlaps the about
-        top: 100px;
+        height: auto !important;
         // max-width: 100% !important;
         // padding: 0 !important;
         // margin: 0 !important;
         
     }
  
-
+//hero section---------------------------------------------
     .hero{
-        position: relative;
-        height: 30vh !important;
+        height: auto;
+        // position: relative;
+        // height: 30vh !important;
         // position: absolute;
         // top: 100px;
         background-color: $alabaster;
-        
-
+    
         h1{
-            padding-top: 1em !important;
+            padding-top: 4em !important;
             font-family:  $font-second;
             font-size: 3em;
             font-weight: $regular;
@@ -30,13 +30,14 @@ main{
             }
         }
 
+
         .search-bar{
             margin: 1.5rem auto;
             border-radius: 100px;
             width: 250px;
             outline: none;
             background-color: none !important;
-            border: 2px solid $persian-blue !important;
+            border: 1px solid $persian-blue !important;
             background-color: $silver;
 
             input{
@@ -46,6 +47,7 @@ main{
             background: transparent;
 
             }
+
             button {
                 border: none;
                 color: $emperor;
@@ -53,7 +55,9 @@ main{
 
                 .fa-search{
                     height: 10px;
+                    width: 8px;
                     outline: none;
+                   
                 }
             }
         }
@@ -62,9 +66,25 @@ main{
     }
 
 
-        section{
-            height: 40vh;
+    //aside sections------------------------------------------------------------
+
+        .aside__section{
+            position: relative;
+            height: auto;
             background-color:$silver;
+            padding: 20px 0 !important;
+
+            .tagline{
+                padding: 2rem 0 !important;
+                font-family: $font-third;
+                color: $minsk;
+
+                span{
+                    color: $flash-mahogany;
+                    font-size: 30px !important;
+                }
+
+            }
         }
 
 }
@@ -72,12 +92,13 @@ main{
 
 aside{
 
+    height: auto;
 
     .aside__container{
         // position: absolute !important;
         // top: 300px !important;
        
-        max-width: 290px;
+        max-width: 270px;
         border: none;
         border-radius: 10px;
         margin: 0 auto;
@@ -89,25 +110,30 @@ aside{
 
             display: flex;
             justify-content: space-between;
+            align-items: flex-basis;
 
             div{
                 width:12px;
                 height:12px;
+                margin-left: 5px !important;
                 border-radius: 100px;
+                box-shadow: inset 1px 1px 4px $black;
                 background: $white;
+            }
+            
+            h2{
+                margin-bottom: 10px;
+                text-align: right;
+                font-size: 14px;
+                color: $white;
+                font-style: italic;
+                font-family: $font-third;
+                letter-spacing:2px;
+    
             }
         }
 
-        h2{
-            margin-bottom: 10px;
-            text-align: right;
-            font-size: 14px;
-            color: $white;
-            font-style: italic;
-            font-family: $font-third;
-            letter-spacing:2px;
-
-        }
+        
         
     }
 
@@ -124,7 +150,7 @@ aside{
             border-radius: 8px;
             border: none !important;
             box-shadow: inset 1px 1px 4px $black; 
-            background-color: rgb(225, 81, 0);
+            background-color: $trinidad;
             color: $white !important;
             font-weight: bold !important;
             font-size: 15px;
