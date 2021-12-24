@@ -1,7 +1,10 @@
 <footer class="container-fluid">
     <div class = "container footer__container">
        <span> Epione Medical Center </span>
+       
+       <span class="follow">Follow us on:</span>
        <ul>
+            <span class="follow-ul">Follow us on:</span>
            <li><a href=""><img src="assets/icons/facebook.svg"></a></li>
            <li><a href=""><img src="assets/icons/twitter.svg"></a></li>
            <li><a href=""><img src="assets/icons/instagram.svg"></a></li>

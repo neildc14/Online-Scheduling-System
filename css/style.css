@@ -33,6 +33,9 @@ nav .logo img {
   width: 100px;
   height: 70px;
 }
+nav button:onfocus {
+  outline: none !important;
+}
 
 .navbar__container {
   display: flex;
@@ -75,6 +78,11 @@ nav .logo img {
   width: 100%;
   background: #514c4c;
 }
+@media screen and (max-width: 800px) {
+  .navbar-nav .nav-link:hover:after {
+    width: 25%;
+  }
+}
 
 footer {
   position: relative;
@@ -88,21 +96,61 @@ footer .footer__container {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1500px) and (min-width: 700px) {
+  footer .footer__container {
+    flex-direction: row !important;
+    justify-content: space-between;
+    padding: 10px 0 !important;
+  }
+}
 footer span {
   margin-top: 2rem;
+}
+@media screen and (max-width: 1500px) and (min-width: 700px) {
+  footer span {
+    margin: 0 !important;
+  }
+}
+footer .follow, footer ul .follow-ul {
+  color: #7a7676;
+}
+@media screen and (max-width: 1500px) and (min-width: 700px) {
+  footer .follow, footer ul .follow-ul {
+    display: none !important;
+  }
 }
 footer ul {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
+  margin-top: 1rem;
   gap: 1.5rem;
 }
+@media screen and (max-width: 1500px) and (min-width: 700px) {
+  footer ul {
+    align-items: center;
+    margin: 0 !important;
+  }
+}
+footer ul .follow-ul {
+  display: none !important;
+}
+@media screen and (max-width: 1500px) and (min-width: 700px) {
+  footer ul .follow-ul {
+    display: block !important;
+  }
+}
 footer ul img {
-  width: 30px;
+  width: 20px;
+  color: grey;
 }
 footer .cp {
   margin-top: 3rem;
   color: #7a7676;
+}
+@media screen and (max-width: 1500px) and (min-width: 700px) {
+  footer .cp {
+    margin: 0 !important;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -195,6 +243,7 @@ aside .aside__container .aside__container_header div {
 }
 aside .aside__container .aside__container_header h2 {
   margin-bottom: 10px;
+  margin-right: 5px !important;
   text-align: right;
   font-size: 14px;
   color: white;

@@ -14,14 +14,12 @@
     </div>
     
     <section class="aside__section">
-
         <aside class="container-fluid">
             <div class="aside__container">
                 <div class="aside__container_header">
                     <div></div>
                     <h2>Check App!</h2>
-                </div>
-                
+                </div>            
                 <div class="aside__container_button">
                     <button type="button" class="consult-online">Consult Online</button>
                     <button type="button" class="check-appointment">Set Appointment</button>

@@ -29,7 +29,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light light">
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light light">
             <div class="container navbar__container">
                 <a class="navbar-brand logo" href="#">
                     <img src="assets/icons/logo.svg" alt="this is a logo">
