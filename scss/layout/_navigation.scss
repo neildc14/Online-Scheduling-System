@@ -1,7 +1,24 @@
+// header{
+//     position: fixed !important;
+//     top: 0;
+//     width: 100%;
+//     z-index: 1000;
+//     background-color: white;
+//     transition: all .5s ease;
+// }
+header{
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+}
+
 nav{
     display: flex;
     align-items: center;
     font-family: $font-first;
+    
    
     .logo {
         
@@ -38,7 +55,12 @@ nav{
         font-weight: $bold;
         justify-content: flex-end;
         align-items: center;
-        color: $bluemine !important;  
+        color: $bluemine !important;
+        
+        
+        @include breakPoints(800px){
+            text-align: center;
+        }
     }
     .nav-link:after {
         content: '';

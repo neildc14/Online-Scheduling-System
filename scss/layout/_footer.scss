@@ -1,0 +1,38 @@
+footer{
+    position:absolute;
+    height: auto;
+    color: $white;
+    background-color: $black-pearl;
+
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span{
+        margin-top: 2rem;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        gap: 1.5rem;
+
+        img{
+            width: 30px;
+        }
+    }
+
+    .cp{
+       
+        margin-top: 3rem;
+        color: $boulder;
+    
+    }
+
+}
+
+

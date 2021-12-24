@@ -1,0 +1,140 @@
+main{
+    @include breakPoints(800px){
+        position: relative;  //making it not overlaps the about
+        top: 100px;
+        // max-width: 100% !important;
+        // padding: 0 !important;
+        // margin: 0 !important;
+        
+    }
+ 
+
+    .hero{
+        position: relative;
+        height: 30vh !important;
+        // position: absolute;
+        // top: 100px;
+        background-color: $alabaster;
+        
+
+        h1{
+            padding-top: 1em !important;
+            font-family:  $font-second;
+            font-size: 3em;
+            font-weight: $regular;
+            color: $mine-shaft;
+
+
+            @include breakPoints(800px){
+                font-size:2em;
+            }
+        }
+
+        .search-bar{
+            margin: 1.5rem auto;
+            border-radius: 100px;
+            width: 250px;
+            outline: none;
+            background-color: none !important;
+            border: 2px solid $persian-blue !important;
+            background-color: $silver;
+
+            input{
+            border: none;
+            width: 80%;
+            outline: none;
+            background: transparent;
+
+            }
+            button {
+                border: none;
+                color: $emperor;
+                background: transparent;
+
+                .fa-search{
+                    height: 10px;
+                    outline: none;
+                }
+            }
+        }
+
+
+    }
+
+
+        section{
+            height: 40vh;
+            background-color:$silver;
+        }
+
+}
+
+
+aside{
+
+
+    .aside__container{
+        // position: absolute !important;
+        // top: 300px !important;
+       
+        max-width: 290px;
+        border: none;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 1rem .5rem 3rem .5rem !important;
+        background-color: $boulder;
+        opacity: 0.9;
+
+        .aside__container_header{
+
+            display: flex;
+            justify-content: space-between;
+
+            div{
+                width:12px;
+                height:12px;
+                border-radius: 100px;
+                background: $white;
+            }
+        }
+
+        h2{
+            margin-bottom: 10px;
+            text-align: right;
+            font-size: 14px;
+            color: $white;
+            font-style: italic;
+            font-family: $font-third;
+            letter-spacing:2px;
+
+        }
+        
+    }
+
+    .aside__container_button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .consult-online{
+            width: 200px;
+            padding: 15px 0 !important;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none !important;
+            box-shadow: inset 1px 1px 4px $black; 
+            background-color: rgb(225, 81, 0);
+            color: $white !important;
+            font-weight: bold !important;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+
+        .check-appointment{
+            @extend .consult-online;
+            background-color: $salem;
+        }
+    }
+}
+
