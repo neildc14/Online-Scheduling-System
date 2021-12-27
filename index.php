@@ -19,7 +19,10 @@
                         <button type="button" class="check-appointment">Set Appointment</button>
                     </div>  
                 </div>
-                <h2 class="tagline">We <span>hear</span> your pain.<br> We <span>heal</span> your pain!</h2>  
+                <div class="tagline">
+                    <h2>We <span>hear</span> your pain.
+                    <br> We <span>heal</span> your pain!</h2>  
+                </div>    
             </aside>
     </section>
 </main>

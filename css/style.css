@@ -249,12 +249,20 @@ main .hero .search-bar button .fa-search {
   padding: 2rem 0 !important;
   font-family: "Lobster", cursive;
   color: #303185;
+  font-size: 2.5rem;
 }
 @media screen and (max-width: 1400px) and (min-width: 768px) {
   .aside__section .tagline {
     padding-left: 3rem !important;
     letter-spacing: 2px;
-    font-size: 2.5rem;
+  }
+}
+.aside__section .tagline br {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .aside__section .tagline br {
+    display: block;
   }
 }
 .aside__section .tagline span {
