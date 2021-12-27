@@ -41,7 +41,11 @@ nav button:onfocus {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 25px !important;
+}
+@media screen and (max-width: 768px) {
+  .navbar__container {
+    padding: 0 25px !important;
+  }
 }
 
 .navbar-collapse {
@@ -153,7 +157,7 @@ footer .cp {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   main {
     position: relative;
     height: auto !important;
@@ -161,7 +165,6 @@ footer .cp {
 }
 main .hero {
   height: auto;
-  background-color: #f8f8f8;
 }
 main .hero h1 {
   padding-top: 4em !important;
@@ -170,9 +173,15 @@ main .hero h1 {
   font-weight: 400;
   color: #353333;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   main .hero h1 {
     font-size: 2em;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+  main .hero h1 {
+    padding-top: 3.9rem !important;
+    font-size: 3.5rem;
   }
 }
 main .hero .search-bar {
@@ -180,9 +189,29 @@ main .hero .search-bar {
   border-radius: 100px;
   width: 250px;
   outline: none;
-  background-color: none !important;
   border: 1px solid #2a2ae7 !important;
   background-color: #c4c4c4;
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  main .hero .search-bar {
+    width: 500px;
+    height: 2rem;
+    margin: 2rem auto;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+  main .hero .search-bar {
+    width: 500px;
+    height: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  main .hero .search-bar {
+    width: 700px;
+  }
 }
 main .hero .search-bar input {
   border: none;
@@ -200,33 +229,81 @@ main .hero .search-bar button .fa-search {
   width: 8px;
   outline: none;
 }
-main .aside__section {
+
+.aside__section {
   position: relative;
-  height: auto;
+  height: auto !important;
   background-color: #c4c4c4;
-  padding: 20px 0 !important;
 }
-main .aside__section .tagline {
+@media screen and (max-width: 992px) {
+  .aside__section {
+    padding: 20px 0 !important;
+  }
+}
+@media screen and (max-width: 1600px) and (min-width: 992px) {
+  .aside__section {
+    padding: 2rem 0 !important;
+  }
+}
+.aside__section .tagline {
   padding: 2rem 0 !important;
   font-family: "Lobster", cursive;
   color: #303185;
 }
-main .aside__section .tagline span {
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+  .aside__section .tagline {
+    padding-left: 3rem !important;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+  }
+}
+.aside__section .tagline span {
   color: #c83434;
   font-size: 30px !important;
+}
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+  .aside__section .tagline span {
+    font-size: 3rem !important;
+  }
 }
 
 aside {
   height: auto;
 }
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+  aside {
+    width: 100% !important;
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    justify-content: space-between !important;
+  }
+}
 aside .aside__container {
-  max-width: 270px;
   border: none;
   border-radius: 10px;
-  margin: 0 auto;
   padding: 1rem 0.5rem 3rem 0.5rem !important;
   background-color: #7a7676;
-  opacity: 0.9;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  aside .aside__container {
+    margin: 0 auto;
+    max-width: 270px;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  aside .aside__container {
+    padding: 1.5rem 1.3rem 3rem 1.3rem !important;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+  aside .aside__container {
+    position: relative;
+    top: -9rem;
+    margin-right: 7rem;
+    padding: 1.5rem 1.3rem 3rem 1.3rem !important;
+  }
 }
 aside .aside__container .aside__container_header {
   display: flex;
@@ -240,6 +317,7 @@ aside .aside__container .aside__container_header div {
   border-radius: 100px;
   box-shadow: inset 1px 1px 4px black;
   background: white;
+  opacity: 1 !important;
 }
 aside .aside__container .aside__container_header h2 {
   margin-bottom: 10px;
@@ -269,6 +347,7 @@ aside .aside__container_button .consult-online, aside .aside__container_button .
   font-weight: bold !important;
   font-size: 15px;
   letter-spacing: 2px;
+  opacity: 1 !important;
 }
 aside .aside__container_button .check-appointment {
   background-color: #059c1d;
